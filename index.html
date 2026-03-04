@@ -4,56 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salvaturism</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <header class="bg-dark text-white">
-        <div class="container py-4 fixed">
-            <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap ">
-                <a href="" class="text-decoration-none link-light">
-                    <h1 class="h4 mb-0">Salvaturism</h1>
-                </a>
-                <nav class="d-flex gap-3 small">
-                <a class="link-light text-decoration-none" href="#porque">¿Por que?</a>
-                <a class="link-light text-decoration-none" href="#destinos">Destinos</a>
-                <a class="link-light text-decoration-none" href="#paquetes">Paquetes</a>
-                <a class="link-light text-decoration-none" href="#reserva">Reserva</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    
+    <a class="navbar-brand" href="index.html">Salvaturism</a>
+
+    <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#porque">¿Por qué visitarlo?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#destinos">Destinos turísticos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#paquetes">Paquetes turísticos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reserva">Reserva tu Tour</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+            
+<!--Abner Díaz-->
     <main>
         <section id="porque" class="container">
             <div class="text-center mb-4 mt-5">
                 <h2 class="display-6 fw-semibold mb-1">¿Por que visitar El Salvador?</h2>
-                <p class="text-secondary mb-0">razones</p>
+                <p class="text-secondary mb-0">Razones para visitar El Salvador</p>
             </div>
 
-            <!--No se que pondran aca asi que coloque lo mismo-->
             <div class="row g-4">
                 <div class="col-12 col-md-4">
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body p-4">
                             <div class="d-flex align-items-center gap-3 mb-2">
-                                <h3 class="h5 mb-0">Uso de row y col</h3>
+                                <h3 class="h5 mb-0">Naturaleza impresionante 🌋</h3>
                             </div>
                             <p class="text-secondary mb-0">
-                                Textp...
-                        </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body p-4">
-                            <div class="d-flex align-items-center gap-3 mb-2">
-                                <h3 class="h5 mb-0">Uso de row y col</h3>
-                            </div>
-                            <p class="text-secondary mb-0">
-                            texto...
+                                Disfruta volcanes, montañas, lagos y playas en un solo país. 
+                                El Salvador ofrece paisajes únicos ideales para la aventura y la exploración.
                             </p>
                         </div>
                     </div>
@@ -63,10 +69,25 @@
                     <div class="card h-100 shadow-sm border-0">
                         <div class="card-body p-4">
                             <div class="d-flex align-items-center gap-3 mb-2">
-                                <h3 class="h5 mb-0">Uso de row y col</h3>
+                                <h3 class="h5 mb-0">Playas y surf de clase mundial 🏄‍♂️</h3>
                             </div>
                             <p class="text-secondary mb-0">
-                                texto...
+                            Reconocido internacionalmente por sus olas perfectas, es un destino ideal para 
+                            surfistas y amantes del mar durante todo el año.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <h3 class="h5 mb-0">Cultura y gastronomía 🍜</h3>
+                            </div>
+                            <p class="text-secondary mb-0">
+                                Descubre la rica cultura salvadoreña y disfruta de su deliciosa gastronomía, 
+                                llena de sabores tradicionales y platos emblemáticos.
                             </p>
                         </div>
                     </div>
@@ -120,11 +141,11 @@
 
         <section id="paquetes" class="container mt-5">
             <div class="text-center mb-4">
-                <h2 class="display-6 fw-semibold mb-1">Paquetes turisticos</h2>
+                <h2 class="display-6 fw-semibold mb-1">Paquetes turísticos</h2>
                 <p class="text-secondary mb-0">Espacio para colocar algo si gustan</p>
             </div>
 
-            <!-- podriamos poner incluso detalles del paquete como de donde sale, donde se hospedan si es que se hospedan. -->
+            <!---->
             <div class="card shadow-sm border-0">
                 <div class="card-body">
                     <div class="table-responsive">
@@ -182,7 +203,7 @@
         <section id="reserva" class="container mt-5">
             <div class="text-center mb-4">
                 <h2 class="display-6 fw-semibold mb-1">Reserva tu Tour</h2>
-                <p class="text-secondary mb-0">Se puede colocar alguna frase o nota aca.</p>
+                <p class="text-secondary mb-0">Completa el formulario y uno de nuestros asesores se pondrá en contacto contigo para confirmar tu experiencia..</p>
             </div>
 
             <div class="card shadow-sm border-0">
@@ -221,10 +242,29 @@
             </div>
         </section>
     </main>
-    <footer class="border-top bg-light mt-5">
-        <div class="container py-4 d-flex justify-content-between flex-wrap gap-2">
-            <small class="text-secondary">2026 salvaturism</small>
-            <small class="text-secondary">aca se suelen poner redes o cosas de contacto</small>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-3">
+                    <h5>Salvaturism</h5>
+                    <p>Desarrollo Web con Bootstrap 5.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces</h5>
+                    <ul class="unstyled">
+                        <li><a href="#porque" class="text-white text-decoration-none">¿Porque Visitar?</a></li>
+                        <li><a href="#paquetes" class="text-white text-decoration-none">Paquetes</a></li>
+                        <li><a href="#reserva" class="text-white text-decoration-none">Reservas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p>Email: info@salvaturism.com</p>
+                </div>
+            </div>
+            <div class="text-center pt-3 border-top border-secondary">
+                <small>2026 Salvaturism. Todos los derechos reservados.</small>
+            </div>
         </div>
     </footer>
 </body>
