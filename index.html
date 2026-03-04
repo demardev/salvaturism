@@ -179,10 +179,11 @@
             </div>
         </section>
 
+        <!--Form Hanssel-->
         <section id="reserva" class="container mt-5">
             <div class="text-center mb-4">
                 <h2 class="display-6 fw-semibold mb-1">Reserva tu Tour</h2>
-                <p class="text-secondary mb-0">Se puede colocar alguna frase o nota aca.</p>
+                <p class="text-secondary mb-0">Hagamos turismo SV.</p>
             </div>
 
             <div class="card shadow-sm border-0">
@@ -195,17 +196,22 @@
 
                         <div class="col-12 col-md-6">
                             <label for="correo" class="form-label">Correo</label>
-                            <input id="correo" type="email" class="form-control" placeholder="capitancentroamerica@udb.edu.sv" required>
+                            <input id="correo" type="email" class="form-control" placeholder="Ingrese su correo Electronico" required>
                         </div>
 
                         <div class="col-12">
                             <label for="destino" class="form-label">Destino</label>
-                            <input id="destino" type="text" class="form-control" placeholder="plaza zurita la lleva" required>
+                            <select class="form-select" required>
+                                <option selected disabled>Seleccione lugar</option>
+                                <option>El Tunco</option>
+                                <option>volcan llamatepec</option>
+                                <option>lago de coatepeque</option>
+                            </select>
                         </div>
 
                         <div class="col-12">
                             <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea id="mensaje" class="form-control" rows="4" placeholder="detalles a tener en cuenta"></textarea>
+                            <textarea id="mensaje" class="form-control" rows="4" placeholder="Ingrese un mensaje"></textarea>
                         </div>
 
                         <div class="col-12 d-flex gap-2 flex-wrap">
