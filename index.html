@@ -21,7 +21,57 @@ transition: transform 0.3s;
 transform: translateY(-5px);
 }
 </style>
+<style>
 
+/* Tabla normal en pantallas grandes */
+@media (min-width: 768px) {
+    #paquetes table {
+        width: 100%;
+    }
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+
+    #paquetes table thead {
+        display: none;
+    }
+
+    #paquetes table,
+    #paquetes table tbody,
+    #paquetes table tr,
+    #paquetes table td {
+        display: block;
+        width: 100%;
+    }
+
+    #paquetes table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 10px;
+        background: white;
+    }
+
+    #paquetes table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    #paquetes table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+}
+
+</style>
 </head>
 <!--Abner Díaz-->
 <body class="d-flex flex-column min-vh-100">
@@ -178,67 +228,67 @@ transform: translateY(-5px);
                             <tbody>
 
                                 <tr>
-                                    <td>Paquete 1</td>
-                                    <td>Playa El Tunco</td>
-                                    <td>1 día</td>
-                                    <td>$25.00</td>
-                                    <td>1 persona</td>
+                                    <td data-label="Paquete">Paquete 1</td>
+                                    <td data-label="Destino">Playa El Tunco</td>
+                                    <td data-label="Duración">1 día</td>
+                                    <td data-label="Precio">$25.00</td>
+                                    <td data-label="Capacidad">1 persona</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Paquete 2</td>
-                                    <td>Volcán Ilamatepec</td>
-                                    <td>2 días</td>
-                                    <td>$30.00</td>
-                                    <td>1 persona</td>
+                                    <td data-label="Paquete">Paquete 2</td>
+                                    <td data-label="Destino">Volcán Ilamatepec</td>
+                                    <td data-label="Duración">2 días</td>
+                                    <td data-label="Precio">$30.00</td>
+                                    <td data-label="Capacidad">1 persona</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Paquete 3</td>
-                                    <td>Lago de Coatepeque</td>
-                                    <td>Medio día</td>
-                                    <td>$20.00</td>
-                                    <td>1 persona</td>
+                                    <td data-label="Paquete">Paquete 3</td>
+                                    <td data-label="Destino">Lago de Coatepeque</td>
+                                    <td data-label="Duración">Medio día</td>
+                                    <td data-label="Precio">$20.00</td>
+                                    <td data-label="Capacidad">1 persona</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Paquete 4</td>
-                                    <td>Playa El Tunco y Volcán Ilamatepec</td>
-                                    <td>1 día</td>
-                                    <td>$55.00</td>
-                                    <td>1 persona</td>
+                                    <td data-label="Paquete">Paquete 4</td>
+                                    <td data-label="Destino">Playa El Tunco y Volcán Ilamatepec</td>
+                                    <td data-label="Duración">1 día</td>
+                                    <td data-label="Precio">$55.00</td>
+                                    <td data-label="Capacidad">1 persona</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Paquete 5</td>
-                                    <td>Lago de Coatepeque</td>
-                                    <td>1 día</td>
-                                    <td>$40.00</td>
-                                    <td>2 personas</td>
+                                    <td data-label="Paquete">Paquete 5</td>
+                                    <td data-label="Destino">Lago de Coatepeque</td>
+                                    <td data-label="Duración">1 día</td>
+                                    <td data-label="Precio">$40.00</td>
+                                    <td data-label="Capacidad">2 personas</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Paquete 6</td>
-                                    <td>Playa El Tunco</td>
-                                    <td>1 día</td>
-                                    <td>$75.00</td>
-                                    <td>2 personas</td>
+                                    <td data-label="Paquete">Paquete 6</td>
+                                    <td data-label="Destino">Playa El Tunco</td>
+                                    <td data-label="Duración">>1 día</td>
+                                    <td data-label="Precio">$75.00</td>
+                                    <td data-label="Capacidad">2 personas</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Paquete 7</td>
-                                    <td>Volcán Ilamatepec</td>
-                                    <td>Medio día</td>
-                                    <td>$30.00</td>
-                                    <td>2 personas</td>
+                                    <td data-label="Paquete">Paquete 7</td>
+                                    <td data-label="Destino">Volcán Ilamatepec</td>
+                                    <td data-label="Duración">Medio día</td>
+                                    <td data-label="Precio">$30.00</td>
+                                    <td data-label="Capacidad">2 personas</td>
                                 </tr>
 
                                  <tr>
-                                    <td>Paquete 8</td>
-                                    <td>Lago de Coatepeque, Volcán Ilamatepec y Playa El Tunco</td>
-                                    <td>1 día y medio</td>
-                                    <td>$180.00</td>
-                                    <td>2 personas</td>
+                                    <td data-label="Paquete">Paquete 8</td>
+                                    <td data-label="Destino">Lago de Coatepeque, Volcán Ilamatepec y Playa El Tunco</td>
+                                    <td data-label="Duración">1 día y medio</td>
+                                    <td data-label="Precio">$180.00</td>
+                                    <td data-label="Capacidad">2 personas</td>
                                 </tr>
                             </tbody>
                         </table>
