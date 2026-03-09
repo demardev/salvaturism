@@ -9,13 +9,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 <style>
-table {
+table{
     width: 100%;
-    table-layout: fixed;
 }
 
-td, th {
-    word-wrap: break-word;
+td, th{
     font-size: 14px;
 }
 
@@ -41,45 +39,7 @@ transform: translateY(-5px);
 }
 
 /* Adaptación para móviles */
-@media (max-width: 768px) {
 
-    #paquetes table thead {
-        display: none;
-    }
-
-    #paquetes table,
-    #paquetes table tbody,
-    #paquetes table tr,
-    #paquetes table td {
-        display: block;
-        width: 100%;
-    }
-
-    #paquetes table tr {
-        margin-bottom: 1rem;
-        border: 1px solid #dee2e6;
-        border-radius: 8px;
-        padding: 10px;
-        background: white;
-    }
-
-    #paquetes table td {
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-    }
-
-    #paquetes table td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        width: 50%;
-        padding-left: 10px;
-        font-weight: bold;
-        text-align: left;
-    }
-
-}
 
 </style>
 </head>
@@ -224,7 +184,7 @@ transform: translateY(-5px);
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover table-sm text-center align-middle mb-0">
-                            <thead class="table-light">
+                            <thead class="table-info">
 
                                 <tr>
                                     <th>Paquete</th>
@@ -233,9 +193,9 @@ transform: translateY(-5px);
                                     <th>Precio</th>
 
                                     <th>Transporte</th>
-                                    <th>Guía turístico</th>
+                                    <th>Guía</th>
 
-                                    <th>Capacidad</th>
+                                    
 
                                 </tr>
 
@@ -243,109 +203,80 @@ transform: translateY(-5px);
                             <tbody>
 
                                 <tr>
-
-                                    <td>Paquete 1</td>
-                                    <td>destino 1</td>
-                                    <td>1 día</td>
-                                    <td>$00.00</td>
-                                    <td>Bus turístico</td>
-                                    <td>Sí</td>
+                                <td>Paquete 1</td>
+                                <td>Playa El Tunco</td>
+                                <td>1 día</td>
+                                <td>$25.00</td>
+                                <td>Bus</td>
+                                <td>Sí</td>
+                               
                                 </tr>
 
                                 <tr>
-                                    <td>Paquete 2</td>
-                                    <td>destino 2</td>
-                                    <td>2 días</td>
-                                    <td>$00.00</td>
-                                    <td>Microbús</td>
-                                    <td>Sí</td>
+                                <td>Paquete 2</td>
+                                <td>Volcán Ilamatepec</td>
+                                <td>2 días</td>
+                                <td>$30.00</td>
+                                <td>Microbús</td>
+                                <td>Sí</td>
+                                
                                 </tr>
 
                                 <tr>
-                                    <td>Paquete 3</td>
-                                    <td>destino 3</td>
-                                    <td>Medio día</td>
-                                    <td>$00.00</td>
-                                    <td>Bus turístico</td>
-                                    <td>No</td>
+                                <td>Paquete 3</td>
+                                <td>Lago de Coatepeque</td>
+                                <td>Medio día</td>
+                                <td>$20.00</td>
+                                <td>Bus</td>
+                                <td>No</td>
+                                
                                 </tr>
 
                                 <tr>
-                                    <td>Paquete 4</td>
-                                    <td>destino 4</td>
-                                    <td>1 día</td>
-                                    <td>$00.00</td>
-                                    <td>Microbús</td>
-                                    <td>Sí</td>
-
-                                    <td data-label="Paquete">Paquete 1</td>
-                                    <td data-label="Destino">Playa El Tunco</td>
-                                    <td data-label="Duración">1 día</td>
-                                    <td data-label="Precio">$25.00</td>
-                                    <td data-label="Capacidad">1 persona</td>
+                                <td>Paquete 4</td>
+                                <td>Playa El Tunco y Volcán Ilamatepec</td>
+                                <td>1 día</td>
+                                <td>$55.00</td>
+                                <td>Microbús</td>
+                                <td>Sí</td>
+                             
                                 </tr>
 
                                 <tr>
-                                    <td data-label="Paquete">Paquete 2</td>
-                                    <td data-label="Destino">Volcán Ilamatepec</td>
-                                    <td data-label="Duración">2 días</td>
-                                    <td data-label="Precio">$30.00</td>
-                                    <td data-label="Capacidad">1 persona</td>
+                                <td>Paquete 5</td>
+                                <td>Lago de Coatepeque</td>
+                                <td>1 día</td>
+                                <td>$40.00</td>
+                                <td>Lancha + Bus</td>
+                                <td>Sí</td>
+                               
                                 </tr>
 
                                 <tr>
-                                    <td data-label="Paquete">Paquete 3</td>
-                                    <td data-label="Destino">Lago de Coatepeque</td>
-                                    <td data-label="Duración">Medio día</td>
-                                    <td data-label="Precio">$20.00</td>
-                                    <td data-label="Capacidad">1 persona</td>
+                                <td>Paquete 6</td>
+                                <td>Playa El Tunco</td>
+                                <td>1 día</td>
+                                <td>$75.00</td>
+                                <td>Vehículo privado</td>
+                                <td>Sí</td>
+                                
                                 </tr>
 
                                 <tr>
-                                    <td data-label="Paquete">Paquete 4</td>
-                                    <td data-label="Destino">Playa El Tunco y Volcán Ilamatepec</td>
-                                    <td data-label="Duración">1 día</td>
-                                    <td data-label="Precio">$55.00</td>
-                                    <td data-label="Capacidad">1 persona</td>
-
+                                <td>Paquete 7</td>
+                                <td>Volcán Ilamatepec</td>
+                                <td>Medio día</td>
+                                <td>$30.00</td>
+                                <td>Microbús</td>
+                                <td>No</td>
+                                
                                 </tr>
 
-                                <tr>
-                                    <td data-label="Paquete">Paquete 5</td>
-                                    <td data-label="Destino">Lago de Coatepeque</td>
-                                    <td data-label="Duración">1 día</td>
-                                    <td data-label="Precio">$40.00</td>
-                                    <td data-label="Capacidad">2 personas</td>
-                                </tr>
-
-                                <tr>
-                                    <td data-label="Paquete">Paquete 6</td>
-                                    <td data-label="Destino">Playa El Tunco</td>
-                                    <td data-label="Duración">1 día</td>
-                                    <td data-label="Precio">$75.00</td>
-                                    <td data-label="Capacidad">2 personas</td>
-                                </tr>
-
-                                <tr>
-                                    <td data-label="Paquete">Paquete 7</td>
-                                    <td data-label="Destino">Volcán Ilamatepec</td>
-                                    <td data-label="Duración">Medio día</td>
-                                    <td data-label="Precio">$30.00</td>
-                                    <td data-label="Capacidad">2 personas</td>
-                                </tr>
-
-                                 <tr>
-                                    <td data-label="Paquete">Paquete 8</td>
-                                    <td data-label="Destino">Lago de Coatepeque, Volcán Ilamatepec y Playa El Tunco</td>
-                                    <td data-label="Duración">1 día y medio</td>
-                                    <td data-label="Precio">$180.00</td>
-                                    <td data-label="Capacidad">2 personas</td>
-                                </tr>
-                            </tbody>
+                                </tbody>
                         </table>
                     </div>
                     <small class="text-secondary d-block mt-3">
-                        alguna aclaracion o cosas como impuestos
+                        Los precios pueden variar según temporada. El transporte y guía turístico están sujetos a disponibilidad.
                     </small>
                 </div>
             </div>
