@@ -9,6 +9,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 <style>
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+td, th {
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
 html{
 scroll-behavior: smooth;
 }
@@ -163,7 +173,7 @@ transform: translateY(-5px);
             <div class="card shadow-sm border-0">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-bordered align-middle mb-0">
+                        <table class="table table-bordered table-hover table-sm text-center align-middle mb-0">
                             <thead class="table-light">
 
                                 <tr>
@@ -171,6 +181,8 @@ transform: translateY(-5px);
                                     <th>Destino</th>
                                     <th>Duración</th>
                                     <th>Precio</th>
+                                    <th>Transporte</th>
+                                    <th>Guía turístico</th>
                                 </tr>
 
                             </thead>
@@ -181,6 +193,8 @@ transform: translateY(-5px);
                                     <td>destino 1</td>
                                     <td>1 día</td>
                                     <td>$00.00</td>
+                                    <td>Bus turístico</td>
+                                    <td>Sí</td>
                                 </tr>
 
                                 <tr>
@@ -188,6 +202,8 @@ transform: translateY(-5px);
                                     <td>destino 2</td>
                                     <td>2 días</td>
                                     <td>$00.00</td>
+                                    <td>Microbús</td>
+                                    <td>Sí</td>
                                 </tr>
 
                                 <tr>
@@ -195,6 +211,8 @@ transform: translateY(-5px);
                                     <td>destino 3</td>
                                     <td>Medio día</td>
                                     <td>$00.00</td>
+                                    <td>Bus turístico</td>
+                                    <td>No</td>
                                 </tr>
 
                                 <tr>
@@ -202,6 +220,8 @@ transform: translateY(-5px);
                                     <td>destino 4</td>
                                     <td>1 día</td>
                                     <td>$00.00</td>
+                                    <td>Microbús</td>
+                                    <td>Sí</td>
                                 </tr>
 
                             </tbody>
