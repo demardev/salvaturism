@@ -275,18 +275,19 @@ transform: translateY(-5px);
                                 </tbody>
                         </table>
                     </div>
-                    <small class="text-secondary d-block mt-3">
+                    <small class="text-secondary text-center d-block mt-3">
                         Los precios pueden variar según temporada. El transporte y guía turístico están sujetos a disponibilidad.
                     </small>
                 </div>
             </div>
         </section>
 
-        <!--Form Hanssel-->
+        <!--Form Hanssel y Elmer-->
         <section id="reserva" class="container mt-5">
             <div class="text-center mb-4">
                 <h2 class="display-6 fw-semibold mb-1">Reserva tu Tour</h2>
-                <p class="text-secondary mb-0">Se puede colocar alguna frase o nota aca.</p>
+                <p class="text-secondary mb-0">Puedes dejarnos un mensaje adicional si tienes alguna duda o solicitud 
+                especial sobre tu tour. Estaremos encantados de ayudarte.</p>
             </div>
 
             <div class="card shadow-sm border-0">
@@ -302,6 +303,16 @@ transform: translateY(-5px);
                             <input id="correo" type="email" class="form-control" placeholder="Ingrese su correo Electronico" required>
                         </div>
 
+                        <div class="col-12 col-md-6">
+                             <label for="fecha" class="form-label">Fecha del Tour</label>
+                             <input id="fecha" type="date" class="form-control" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                             <label for="dui" class="form-label">Adjuntar DUI (foto o PDF)</label>
+                            <input id="dui" type="file" class="form-control" multiple accept=".jpg,.jpeg,.png,.pdf">
+                        </div>
+                        
                         <div class="col-12">
                             <label for="destino" class="form-label">Destino</label>
                             <select class="form-select" required>
