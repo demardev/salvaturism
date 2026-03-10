@@ -78,12 +78,36 @@ text-align:left;
 }
 
 }
+.fade-in{
+opacity:0;
+transform:translateY(20px);
+transition:all 0.8s ease;
+}
 
+.fade-in.visible{
+opacity:1;
+transform:translateY(0);
+}
+    .navbar-scrolled{
+background-color:#000 !important;
+transition:0.3s;
+}
 </style>
 </head>
 <!--Abner Díaz Nav-->
 <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <section class="bg-dark text-white text-center d-flex align-items-center" style="height:70vh; background-image:url('assets/imagenes/tunco.jpg'); background-size:cover; background-position:center;">
+        <section id="porque" class="container fade-in">
+<section id="destinos" class="container mt-5 fade-in">
+<section id="paquetes" class="container mt-5 fade-in">
+<section id="reserva" class="container mt-5 fade-in">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Descubre El Salvador</h1>
+        <p class="lead">Playas, volcanes y experiencias únicas te esperan.</p>
+        <a href="#paquetes" class="btn btn-primary btn-lg mt-3">Ver paquetes turísticos</a>
+    </div>
+</section>
   <div class="container">
     
     <a class="navbar-brand" href="index.html">Salvaturism</a>
@@ -403,5 +427,28 @@ text-align:left;
             </div>
         </div>
     </footer>
+    <script>
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.classList.add('visible');
+}
+});
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+    <script>
+window.addEventListener("scroll", function(){
+const navbar = document.querySelector(".navbar");
+if(window.scrollY > 50){
+navbar.classList.add("navbar-scrolled");
+}else{
+navbar.classList.remove("navbar-scrolled");
+}
+});
+</script>
 </body>
 </html>
